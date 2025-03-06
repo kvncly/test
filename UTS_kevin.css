@@ -1,0 +1,856 @@
+* {padding: 0; margin: 0}
+
+.container {
+	width: 1263px; 
+    margin: auto;
+	font-family: "calibri";
+}
+
+.menu {
+	position: sticky;
+    top: 0px;
+	z-index: 1;
+}
+nav {
+	position: relative; 
+    background: #0c2461;
+	height: 100px;
+	line-height: 100px;
+}
+nav img {
+	width: 90px; 
+    height: 90px; 
+    margin: 5px 0 0 35px; 
+    float: left;
+	clip-path: circle(50%);
+}
+
+nav h1 {
+	position: absolute; 
+    left: 170px;
+	color: white;
+	font-size: 34px;
+}
+.navmenu {
+	width: 700px;
+	float: right;
+	margin-right: 70px;
+}
+
+nav ul li {
+	float: right; 
+    list-style:none;
+    background: #0c2461;
+	margin-left: 25px;
+}
+nav ul li a {
+    text-decoration: none;
+    padding: 40px 10px;
+	color: white;
+	transition: linear 0s;
+}
+nav ul li ul {
+	visibility: hidden; 
+	position: absolute;
+}
+nav ul li:hover > ul {
+	visibility: visible;
+}
+nav ul li:hover > ul li {
+	height: 46px;
+	line-height: 46px;
+	border-top: 1px solid lightblue;
+}
+nav ul li ul li.bordertop {
+	border-top: 2px solid lightblue;
+}
+nav ul li ul li {
+	float: none; 
+    position: relative;
+	height: 0px;
+	line-height: 0px;
+	transition: ease-in-out 0.2s;
+	margin-left: 0;
+	width: 160px;
+}
+nav ul li:hover ul li a{
+	opacity: 1;
+}
+nav ul li ul li a {
+	padding: 0 0 0 10px;
+	opacity: 0;
+}
+nav ul li:hover > a {
+	color: lightblue;
+	transition: ease 0.5s;
+}
+nav ul ul ul {
+	left: 100%; 
+    top: 1px; 
+}
+nav ul li ul li ul li {	
+	max-height: 0px;
+	width: 190px;
+	transition: linear 0s;
+	visibility: hidden;
+}
+
+nav ul li ul li:hover ul li {
+	max-height: 50px;
+	visibility: visible;
+	transition: ease-in-out 0.2s;
+}
+
+.bagian1 {
+	position: relative;
+	width: 100%;
+	height: 680px;
+	overflow: hidden;
+}
+.blackshadow {
+	width: 100%;
+	height: 680px;
+	background-color: black;
+	opacity: 0.7;
+	position: absolute;
+}
+.bagian1 img {
+	width: 100%;
+	height: 680px;
+}
+
+.text1 {
+	position: absolute;
+    top: 224px;
+    left: 166px;
+	color: white;
+	font-family: "arial";
+}
+.text1 span {
+	border-top: 3.5px solid #0097e6;
+    padding-top: 20px;
+}
+.text1 h1 {
+	font-size: 42px;
+	font-weight: lighter;
+}
+.text1 p {
+	margin: 20px 0 20px 0;
+	font-size: 24px;
+}
+.text1 button {
+	background: #0097e6;
+	color: white;
+	padding: 13px 15px;
+	margin-top: 5px;
+	border: 2px solid #0097e6;
+	Transition: ease 0.5s;
+}
+.text1 button:hover {
+	background: transparent;
+    color: #0097e6;
+}
+
+.bagian1 form {
+	background: white;
+	padding: 15px 10px;
+	width: 925px;
+	margin: auto;
+	box-shadow: 0 4px #0097e6;
+	position: absolute;
+	bottom: 4px;
+	left: 12.5%;
+}
+.bagian1 .jarakform {
+	display: inline;
+    border-right: 1px solid silver;
+	padding: 15px 10px;	
+	margin-right: 10px;
+}
+.bagian1 input, .bagian1 select {
+	width: 175px;
+    padding: 15px 10px;
+    margin-right: 10px;	
+	border: none;
+	color: silver;
+	font-size: 15px;
+}
+.bagian1 .formbutton {
+	display: inline;
+	padding: 15px 10px;
+}
+.bagian1 form button {
+	width: 200px;
+    background: #0097e6;
+	padding: 15px;
+	color: white;
+	font-size: 18px;
+	border: 2px solid #0097e6;
+	transition: ease 0.5s;
+}
+
+.bagian1 form button:hover {
+	background: white;
+    color: #0097e6;
+}
+
+.bagian2 {
+	margin-bottom: 80px;
+	overflow: hidden;
+}
+.Header p {
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 18px;
+	color: #1B9CFC;
+	margin-top: 80px;
+}
+.Header h1 {
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 60px;
+}
+
+.galery {
+	width: 220px;
+	float: left;
+	margin: 0 16px 25px 16px;
+	position: relative;
+}
+.boxshade {
+	width: 220px;
+	height: 250px;
+	background-color: black;
+	opacity: 0.3;
+	position: absolute;
+	border-radius: 6px;
+}
+.galery img {
+	width: 100%; 
+	height: 250px;
+	border-radius: 6px;
+}
+.galery .pemain, .galery .keterangan {
+	position: absolute;
+	color: white;
+	left: 10%;
+}
+.galery .pemain {
+	bottom: 20%;
+	font-size: 22px;
+}
+.galery .keterangan {
+	bottom: 12%;
+}
+.galery .galerybutton {
+	position: absolute;
+	left: 77%;
+	bottom: 12%;
+}
+.galerybutton a {
+	padding: 7px 9px 4px;
+	font-size: 14px;
+	border-radius: 6px;
+	border: 1px solid white;
+	background: transparent;
+	color: white;
+	Transition: ease 0.5s;
+}
+.galerybutton a:hover {
+	background:rgba(255,255,255,0.4);
+    color: white;
+}
+
+.pagination {
+	text-align: center;
+}
+.pagination a {
+	font-size: 30px;
+	text-decoration: none; 
+	color: silver;
+}
+.pagination a.active {
+	color: #0097e6;
+}
+
+.bagian3 {
+	background: #f1f2f6;
+	height: 780px;
+	overflow: hidden;
+}
+
+.galeryrookie {
+	width: 360px;
+	float: left;
+	margin: 0 -25px 0 58px;
+	position: relative;
+}
+.galeryrookie .boxshade {
+	width: 100%;
+	height: 287px;
+	border-radius: 6px 6px 0 0;	
+}
+.galeryrookie img {
+	width: 100%;
+	height: 287px;
+	border-radius: 6px 6px 0 0;
+}
+.galeryrookie .bintang {
+	color: white;
+	position: absolute;
+	top: 5%;
+	left: 8%;
+}
+.galeryrookie .pick {
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	background-color: #1B9CFC;
+	color: white;
+	text-align: center;
+	font-size: 24px;
+	padding: 10px;
+	position: absolute;
+	top: 5%;
+	right: 8%;
+}
+.pick span {
+	display: block;
+}
+
+.ket-rookie {
+	width: 320px;
+	height: 210px;
+	background-color: white;
+	margin-top: -4px;
+	padding: 5px 20px;
+	border-radius: 0 0 6px 6px;
+	box-shadow: 0 1px 10px silver; 
+}
+.ket-rookie .NamaPemain {
+	font-size: 24px;
+	margin-top: 10px 
+}
+.ket-rookie .NamaTeam {
+	color: #1B9CFC;
+	margin-bottom: 15px;
+}
+.ket-rookie .deskripsi p {
+	color: #636e72;
+	font-weight: lighter;
+}
+
+.rookiebawah {
+	border-top: 1px solid silver;
+	padding-top: 12.5px;
+	position: absolute;
+	width: 100%;
+	bottom: 14px;
+}
+.rookiebawah a {
+	text-decoration: none;
+	color: #636e72;
+	font-weight: lighter;
+	font-size: 14px;
+	padding: 15px 28px 15px;
+	Transition: ease 0.5s;
+}
+.rookiebawah a:hover {
+	color: #1B9CFC;
+}
+.rookiebawah a.kanan {
+	border-right: 1px solid silver;
+	padding: 15px 35px 15px;
+}
+
+.bagian4 {
+	width: 1200px;
+	margin: auto;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.team1, .team {
+	width: 288px;
+	height: 240px;
+	float: left;
+	padding: 35px;
+	margin: 10px 5px 60px 28px;
+	border: 1px solid silver;
+	border-radius: 8px;
+}
+.team1 img {
+	width: 105px;
+	height: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	display: block;
+}
+.team img {
+	width: 85px;
+	height: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	display: block;
+}
+.team1 h1, .team h1, .team1 p, .team p {
+	text-align: center;
+}
+.team1 h1, .team h1 {
+	font-size: 22px;
+	margin: 25px 0 15px 0;
+}
+.team1 p, .team p {
+	color: #636e72;
+	font-weight: lighter;
+}
+
+.bawah4 {
+	width: 950px;
+	margin: auto;
+	padding: 60px 100px 100px 100px;
+	border-top: 1px solid silver;
+	overflow: hidden;
+}
+
+.bawah4 article {
+	float: left;
+	width: 450px;
+}
+.bawah4 article p, .bawah4 article h1 {
+	margin-bottom: 30px;
+}
+.bawah4 article h1 {
+	font-size: 20px;
+}
+.bawah4 article p {
+	color: #636e72;
+	font-weight: lighter;
+}
+article button {
+	width: 140px;
+    background: #0097e6;
+	padding: 13px;
+	color: white;
+	font-size: 16px;
+	transition: ease 0.5s;
+	border: 2px solid #0097e6;
+}
+article button:hover {
+	background: white;
+    color: #0097e6;
+}
+
+.bawahkanan4 {
+	float: right;
+}
+.Option4 {
+	width: 430px;
+	border: 1px solid silver;
+	padding: 15px;
+}
+.Option4 h1 {
+	font-size: 22px;
+	display: inline;
+}
+.Option4 p {
+	font-weight: lighter;
+	color: #636e72;
+}
+.Option4 a { 
+	font-size: 40px;
+	text-decoration: none; 
+	color: silver;
+	position: relative;
+	float: right;
+	bottom: 12px;
+}	
+.Option4 a.active {
+	color: #0097e6;
+}
+
+.video {
+	width: 100%;
+	height: 560px;
+	position: relative;
+	overflow: hidden;
+}
+.video video {
+	min-width: 100%;
+	min-height: 100%;
+}
+.video .boxshade {
+	width: 100%;
+	height: 560px;
+}
+.video .isivideo {
+	position: absolute;
+	left: 43%;
+	top: 30%;
+	font-size: 22px;
+	text-align: center;
+	color: white;
+}
+.video .isivideo p {
+	margin-bottom: 10px;
+}
+.video .isivideo h3 {
+	margin-bottom: 25px;
+}
+.video .isivideo a {
+	color: white;
+	border: 3px solid white;
+	border-radius: 50%;
+	padding: 16px 20px;
+	font-size: 18px;
+	background: rgba(255,255,255,0.15);
+}
+
+.pricebox {
+	width: 360px;
+	float: left;
+	margin: 0 -25px 80px 58px;
+	position: relative;
+}
+.headerprice {
+	width: 100%;
+	padding: 25px 0 35px 0;
+	background: #1B9CFC;
+	text-align: center;
+	border-radius: 8px 8px 0 0;
+	color: white;
+}
+.headerprice h3 {
+	margin-bottom: 15px;
+	font-size: 24px;
+	font-weight: lighter;
+}
+.headerprice h1 {
+	margin-bottom: 6px;
+}
+.isiprice {
+	padding: 40px 80px 25px 80px;
+	background: #f1f2f6;
+	border-radius: 0 0 8px 8px;
+}
+.rincian {
+	text-align: center;
+	margin-bottom: 25px;
+}
+.rincian a {
+	text-decoration: none;
+	color: black;
+	transition: ease 0.5s;
+}
+.rincian a:hover {
+	color: #1B9CFC;
+}	
+.isiprice button {
+	width: 140px;
+    background: #1B9CFC;
+	padding: 13px;
+	color: white;
+	font-size: 16px;
+	margin: 15px 0 10px 30px;
+	transition: ease 0.5s;
+	border: 2px solid #1B9CFC;
+}
+.isiprice button:hover {
+	background: #f1f2f6;
+    color: #1B9CFC;
+}
+
+.lokasi iframe {
+	width: 100%;
+	height: 500px;
+}
+.lokasi .teksmap p {
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 18px;
+	color: #1B9CFC;
+	margin-top: 50px;
+}
+.lokasi .teksmap h1 {
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 25px;
+}
+.lokasi button {
+	width: 120px;
+    background: #0097e6;
+	padding: 13px;
+	color: white;
+	font-size: 14px;
+	margin: 0 0 25px 575px;
+	transition: ease 0.5s;
+	border: 2px solid #0097e6;
+}
+.lokasi button:hover {
+	background: white;
+    color: #0097e6;
+}
+
+.fillform {
+	width: 800px;
+	margin: auto;
+}
+.fillform .headform {
+	width: 450px;
+	padding: 15px;
+	margin: auto;
+	border-bottom: 1px solid blue;
+}
+.fillform h1, .fillform p {
+	text-align: center;
+}
+.fillform h1 {
+	font-size: 22px;
+}
+.fillform p {
+	margin-top: 15px;
+}
+
+.fillform form {
+	background: white;
+	padding: 15px;
+	width: 500px;
+	margin: 25px 0 0 155px;
+}
+.fillform input, .fillform select {
+	margin-right: 20px;
+}
+.fillform input {
+	padding-left: 5px;
+	width: 90px;
+	height: 27px;
+	border: 1px solid silver;
+}
+.fillform select {
+	border: 2px inset;
+	height: 29px;
+	width: 100px;
+}
+.fillform button {
+	display: block;
+	margin-left: 179px;
+	margin-top: 15px;
+	padding: 5px;
+	width: 120px;
+	background: #0097e6;
+	transition: ease 0.5s;
+	border: 2px solid #0097e6;
+	color: white;
+}
+.fillform button:hover {
+	background: white;
+    color: #0097e6;
+}
+
+.bottomform {
+	width: 730px;
+	height: 80px;
+	margin: auto;
+	margin-top: 50px;
+	border-left: 1px solid silver;
+	background: #f1f2f6;
+	padding: 10px 0;
+}
+.bottomform button {
+	display: inline;
+	margin-right: -20px;
+	margin-left: 40px;
+	border-radius: 8px;
+	height: 50px;
+	width: 170px;
+}
+.bottomform .hijau, .bottomform .biru {
+	display: inline;
+}
+.bottomform .hijau button, .bottomform .biru button {
+	width: 120px;
+}
+.bottomform .hijau button {
+	background: seagreen;
+	border: 2px solid seagreen;
+}
+.bottomform .hijau button:hover {
+	background: white;
+	color: seagreen;
+}
+.bottomform .biru button {
+	background: #0c2461;
+	border: 2px solid #0c2461;
+}
+.bottomform .biru button:hover {
+	background: white;
+	color: #0c2461;
+}
+
+.bagian6 {
+	height: 300px;
+	width: 750px;
+	margin: auto;
+	margin-bottom: 100px;
+}
+
+.profil {
+	width: 250px; 
+    padding: 20px;
+	float: left;
+}
+.profil img {
+	width: 250px;
+    height: 170px;
+	margin-top: 25px;
+}
+.profil h1, .favorit h1 {
+	color: #0c2461;
+	margin-bottom: 15px;
+}
+
+.favorit {
+	padding: 20px;
+	float: right;
+	margin-left: 100px;
+}
+.favorit img {
+	margin-top: 25px;
+	margin-left: -30px;
+	height: 200px;
+	width: 300px;
+}
+
+.footer {
+	width: 1143px;
+	margin: auto;
+	padding: 15px 60px 25px 60px;
+	border-top: 1px solid silver;
+	overflow: hidden;
+}
+
+.fkiri {
+	width: 450px;
+	float: left;
+	margin-top: 50px;
+}
+.fkiri img {
+	width: 100px;
+	height: 70px;
+	margin-bottom: 25px;
+}
+.fkiri p {
+	margin-bottom: 40px;
+	color: #636e72;
+	font-weight: lighter;
+}
+
+.iconfooter a {
+	margin-right: 3px;
+}
+.iconfooter a.twitter {
+	border-radius: 50%;
+	background-color: silver;
+	padding: 7px 9px;
+	color: white;
+	transition: ease 0.5s;
+}
+.iconfooter a.fb {
+	border-radius: 50%;
+	background-color: silver;
+	padding: 7px 12px;
+	color: white;
+	transition: ease 0.5s;
+}
+.iconfooter a {
+	border-radius: 50%;
+	background-color: silver;
+	padding: 7px 10px;
+	color: white;
+	transition: ease 0.5s;
+}
+.iconfooter a:hover {
+	background: #0097e6;
+} 
+
+.ftengah {
+	width: 280px;
+	float: left;
+	margin: 82px 0 0 30px;
+}
+.ftengah h1, .fkanan h1 {
+	margin-bottom: 38px; 
+	font-size: 25px;
+	font-weight: normal;
+}
+
+.linkkiri {
+	float: left;
+}
+.linkkanan {
+	float: right;
+}
+.linkkiri ul, .linkkanan ul {
+	list-style: square;
+}
+.linkkiri ul li, .linkkanan ul li {
+	margin-bottom: 20px;
+	margin-left: 15px;
+	color: #0097e6;
+}
+.linkkiri ul li a, .linkkanan ul li a {
+	text-decoration: none;
+	color: #636e72;
+	padding-left: 12px;
+	position: relative;
+	right: 15px;
+	transition: ease 0.5s;
+	font-size: 16px;
+	font-weight: lighter;
+}
+.linkkiri ul li a:hover, .linkkiri ul li a:hover {
+	color: #0097e6;
+}
+
+.fkanan {
+	float: right;
+	width: 285px;
+	margin: 82px 5px 0 0;
+}
+.fkanan p {
+	margin-bottom: 25px;
+	color: #636e72;
+	font-weight: lighter;
+}
+.fkanan .contactkiri {
+	float: left;
+}
+.fkanan .contactkiri p {
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.fkanan .contactkanan {
+	margin-left: 80px;
+}
+.fkanan .contactkanan .info {
+	margin-bottom: 10px;
+}
+.fkanan .contactkanan a { 
+	text-decoration: none;
+	color: #0097e6;
+}
+
+footer {
+	background: #f1f2f6; 
+    color: black; 
+	text-align: center; 
+	font-size: 15px;
+    line-height: 80px; 
+	height: 80px; 
+	margin-top: 40px; 
+	width: 100%
+}
+
+

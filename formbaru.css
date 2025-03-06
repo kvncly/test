@@ -1,0 +1,335 @@
+* {padding: 0; margin: 0}
+
+.container {
+	width: 1263px; 
+    margin: auto;
+	font-family: "calibri";
+	background: #f1f2f6;
+}
+
+.menu {
+	position: sticky;
+    top: 0px;
+	z-index: 1;
+}
+nav {
+	position: relative; 
+    background: #0c2461;
+	height: 100px;
+	line-height: 100px;
+}
+nav img {
+	width: 90px; 
+    height: 90px; 
+    margin: 5px 0 0 35px; 
+    float: left;
+	clip-path: circle(50%);
+}
+
+nav h1 {
+	position: absolute; 
+    left: 170px;
+	color: white;
+	font-size: 34px;
+}
+.navmenu {
+	width: 700px;
+	float: right;
+	margin-right: 70px;
+}
+
+nav ul li {
+	float: right; 
+    list-style:none;
+    background: #0c2461;
+	margin-left: 25px;
+}
+nav ul li a {
+    text-decoration: none;
+    padding: 40px 10px;
+	color: white;
+	transition: linear 0s;
+}
+nav ul li ul {
+	visibility: hidden; 
+	position: absolute;
+}
+nav ul li:hover > ul {
+	visibility: visible;
+}
+nav ul li:hover > ul li {
+	height: 46px;
+	line-height: 46px;
+	border-top: 1px solid lightblue;
+}
+nav ul li ul li.bordertop {
+	border-top: 2px solid lightblue;
+}
+nav ul li ul li {
+	float: none; 
+    position: relative;
+	height: 0px;
+	line-height: 0px;
+	transition: ease-in-out 0.2s;
+	margin-left: 0;
+	width: 160px;
+}
+nav ul li:hover ul li a{
+	opacity: 1;
+}
+nav ul li ul li a {
+	padding: 0 0 0 10px;
+	opacity: 0;
+}
+nav ul li:hover > a {
+	color: lightblue;
+	transition: ease 0.5s;
+}
+nav ul ul ul {
+	left: 100%; 
+    top: 1px; 
+}
+nav ul li ul li ul li {	
+	max-height: 0px;
+	width: 190px;
+	transition: linear 0s;
+	visibility: hidden;
+}
+
+nav ul li ul li:hover ul li {
+	max-height: 50px;
+	visibility: visible;
+	transition: ease-in-out 0.2s;
+}
+
+.footer {
+	width: 1143px;
+	margin: auto;
+	padding: 15px 60px 25px 60px;
+	border-top: 1px solid silver;
+	overflow: hidden;
+}
+
+.fkiri {
+	width: 450px;
+	float: left;
+	margin-top: 50px;
+}
+.fkiri img {
+	width: 100px;
+	height: 70px;
+	margin-bottom: 25px;
+}
+.fkiri p {
+	margin-bottom: 40px;
+	color: #636e72;
+	font-weight: lighter;
+}
+
+.iconfooter a {
+	margin-right: 3px;
+}
+.iconfooter a.twitter {
+	border-radius: 50%;
+	background-color: silver;
+	padding: 7px 9px;
+	color: white;
+	transition: ease 0.5s;
+}
+.iconfooter a.fb {
+	border-radius: 50%;
+	background-color: silver;
+	padding: 7px 12px;
+	color: white;
+	transition: ease 0.5s;
+}
+.iconfooter a {
+	border-radius: 50%;
+	background-color: silver;
+	padding: 7px 10px;
+	color: white;
+	transition: ease 0.5s;
+}
+.iconfooter a:hover {
+	background: #0097e6;
+} 
+
+.ftengah {
+	width: 280px;
+	float: left;
+	margin: 82px 0 0 30px;
+}
+.ftengah h1, .fkanan h1 {
+	margin-bottom: 38px; 
+	font-size: 25px;
+	font-weight: normal;
+}
+
+.linkkiri {
+	float: left;
+}
+.linkkanan {
+	float: right;
+}
+.linkkiri ul, .linkkanan ul {
+	list-style: square;
+}
+.linkkiri ul li, .linkkanan ul li {
+	margin-bottom: 20px;
+	margin-left: 15px;
+	color: #0097e6;
+}
+.linkkiri ul li a, .linkkanan ul li a {
+	text-decoration: none;
+	color: #636e72;
+	padding-left: 12px;
+	position: relative;
+	right: 15px;
+	transition: ease 0.5s;
+	font-size: 16px;
+	font-weight: lighter;
+}
+.linkkiri ul li a:hover, .linkkiri ul li a:hover {
+	color: #0097e6;
+}
+
+.fkanan {
+	float: right;
+	width: 285px;
+	margin: 82px 5px 0 0;
+}
+.fkanan p {
+	margin-bottom: 25px;
+	color: #636e72;
+	font-weight: lighter;
+}
+.fkanan .contactkiri {
+	float: left;
+}
+.fkanan .contactkiri p {
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.fkanan .contactkanan {
+	margin-left: 80px;
+}
+.fkanan .contactkanan .info {
+	margin-bottom: 10px;
+}
+.fkanan .contactkanan a { 
+	text-decoration: none;
+	color: #0097e6;
+}
+
+footer {
+	background: silver; 
+    color: black; 
+	text-align: center; 
+	font-size: 15px;
+    line-height: 80px; 
+	height: 80px; 
+	margin-top: 40px; 
+	width: 100%
+}
+
+.formbaru {
+	margin: auto;
+	width: 750px;
+	height: 450px;
+	padding: 0 0 30px 30px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border-radius: 6px 0 0 6px;
+	box-shadow: 0 1px 10px silver; 
+}
+
+.head {
+	margin-bottom: 35px;
+}
+.head p {
+	margin-top: 30px;
+	color: #1B9CFC;
+	font-size: 20px;
+}
+.head h1 {
+	font-size: 24px;
+	font-family: arial;
+	font-weight: normal;
+	margin-top: 10px;
+}
+
+form {
+	width: 500px;
+	float: left;
+}
+input {background: #dcdde1;
+	width: 175px;
+    padding: 10px;
+    margin-right: 20px;	
+	border: none;
+	color: silver;
+	font-size: 15px;
+}
+textarea {
+	padding: 10px;
+	font-size: 15px;
+}
+
+button {
+	width: 140px;
+    background: #0097e6;
+	padding: 10px;
+	color: white;
+	font-size: 16px;
+	border: 2px solid #0097e6;
+	transition: ease 0.5s;
+	display: block;
+	margin-top: 25px;
+}
+
+form button:hover {
+	background: white;
+    color: #0097e6;
+}
+
+.formkanan {width: 196px;
+	height: 431px;
+	float: right;
+	padding: 25px;
+	background: #0097e6;
+}
+
+.formkanan p {
+	color: white;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+.formkanan h1 {
+	color: white;
+	margin-bottom: 30px;
+}
+
+.keterangan {
+	margin-bottom: 50px;
+}
+.keterangan p {
+	font-size: 16px;
+	font-weight: lighter;
+}
+
+.ketkiri {
+	float: left;
+}
+.ketkiri p {
+	font-size: 16px;
+}
+.ketkanan {
+	margin-left: 80px;
+}
+.ketkanan .info {
+	margin-bottom: 5px;
+}
+.ketkanan .info a {
+	text-decoration: none;
+	color: white;
+}
